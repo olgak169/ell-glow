@@ -1,0 +1,288 @@
+{
+  "services": [
+    {
+      "name": "Mini Facial",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-01.jpg",
+      "background": null
+    },
+    {
+      "name": "Microdermabrasion",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-03.png",
+      "background": "dark"
+    },
+    {
+      "name": "Chemical peel",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-02.png",
+      "background": null
+    },
+    {
+      "name": "European facial",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-05.png",
+      "background": "light"
+    },
+    {
+      "name": "Man's facial",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-03.jpg",
+      "background": null
+    },
+    {
+      "name": "Deep cleaning",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-04.png",
+      "background": "dark"
+    },
+    {
+      "name": "Fresh and glow",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-04.png",
+      "background": null
+    },
+    {
+      "name": "Microdermabrasion",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-02.png",
+      "background": "light"
+    },
+    {
+      "name": "Oxygen facial",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-05.jpg",
+      "background": null
+    },
+    {
+      "name": "Acne treatment",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-01.png",
+      "background": "dark"
+    },
+    {
+      "name": "Age defying",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "service-img-06.jpg",
+      "background": null
+    },
+    {
+      "name": "Aqua facial",
+      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "price": 80,
+      "duration": 30,
+      "img": "d-img-06.png",
+      "background": "light"
+    }
+  ],
+  "addons": [
+    {
+      "img": "service-img-07.jpeg",
+      "background": null,
+      "content": [
+        {
+          "name": "Enzyme | Glycolic peel",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 25
+        },
+        {
+          "name": "TCA | Jessner peel",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "img": "d-img-03.png",
+      "background": null,
+      "content": [
+        {
+          "name": "Microdermabrasion",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        },
+        {
+          "name": "Extraction",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "img": "service-img-08.jpeg",
+      "background": null,
+      "content": [
+        {
+          "name": "Eye treatment",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        },
+        {
+          "name": "Quick head | face massage",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "img": "d-img-05.png",
+      "background": "light",
+      "content": [
+        {
+          "name": "Oxygen treatment",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        },
+        {
+          "name": "LED treatment",
+          "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+          "price": 40
+        }
+      ]
+    }
+  ],
+  "other": [
+    "Hair removal | IPL laser",
+    "Skin Tag | Pigmentation removal",
+    "Body treatments",
+    "Hair services"
+  ],
+  "mainText": [
+    "You will be served by certified well-trained specialists: therapists, dermatologists and nail technicians with extensive experience.",
+    "Only Top quality treatments performed by High class professionals all in one place offers total make-over solutions for your hands, feet, brows and lashes, as well as make-up and full menu of hair services."
+  ],
+  "reviews": [
+    {
+      "id": 0,
+      "text": "What an amazing experience, in preperation for my flight abroad and I highly recommend it. I will definitely be back."
+    },
+    {
+      "id": 1,
+      "text": "Absolutely wonderful, no matter what treatment I have had I always feel like a queen when I leave. Everyone is professional and accommodating."
+    },
+    {
+      "id": 2,
+      "text": "I don’t know why it took me this long to get a facial because it was AMAZING. Elle did an outstanding job. From start to finish it was flawless. She was very kind, and knowledgeable of what she was doing. I highly recommend the aesthetics program & booking with Elle. I will be back to see her very soon!!"
+    },
+    {
+      "id": 3,
+      "text": "Elle asked me different kinds of questions to accurately categorise my skin type and which products will help me with my acne. Will def be back. Elle took care of all my needs, her hands are healing! Felt relaxed the entire time. The Glycolic peel was my favourite addition. Awesome, keep it up, going to recommend them to all my family!"
+    },
+    {
+      "id": 4,
+      "text": "I am beyond satisfied with the service provided by Elle. She did an amazing job on my facial. Very good communication she informed me of each product that was used. She’s very knowledgeable and friendly. I definitely recommend her services."
+    },
+    {
+      "id": 5,
+      "text": "I went in for a facial with Elle and I loved it. She was very professional and would communicate and explain to me what she was going to do. I felt so relaxed and really enjoyed my facial with her. My skin felt great after and I would for sure go back with Elle for another facial."
+    }
+  ],
+  "locationGallery": ["e1-img-01.jpg", "e1-img-02.jpg", "e1-img-03.jpg", "e1-img-04.jpg"],
+  "aboutGallery": ["e2-img-01.jpeg", "e2-img-02.jpg", "e2-img-03.png", "e2-img-04.jpg"]
+}

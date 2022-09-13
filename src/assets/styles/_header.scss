@@ -1,0 +1,157 @@
+@import 'variables';
+.nav-open {
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  overflow-x: hidden;
+}
+.header-container {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.menu-btns {
+  z-index: 10;
+  button {
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: $accent-04;
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40%;
+  padding: 12rem 1rem 0 2rem;
+  z-index: 5;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  a {
+    font-size: var(--fs-400);
+  }
+}
+.nav-link {
+  text-transform: uppercase;
+  color: $accent-01;
+  &.router-link-active {
+    color: $accent-03;
+  }
+}
+.nav-btns {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  background-color: none;
+  .nav-btn-link {
+    background-color: $white;
+    color: $accent-01;
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.2rem;
+    min-width: 7.5rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    &:hover,
+    &:focus {
+      background-color: $accent-02;
+      color: $white;
+    }
+    &:first-of-type {
+      background-color: $accent-02;
+      color: $white;
+      &:hover,
+      &:focus {
+        background-color: $white;
+        color: $accent-01;
+      }
+    }
+  }
+}
+
+@include breaks(medium) {
+  .menu-btns {
+    display: none;
+  }
+  nav {
+    position: relative;
+    background: transparent;
+    flex-direction: row;
+    align-items: center;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
+    padding: 0;
+    gap: 1.5rem;
+    height: unset;
+    min-height: unset;
+
+    ul {
+      flex-direction: row;
+    }
+  }
+  .nav-link {
+    position: relative;
+    z-index: 2;
+    &:hover::before {
+      opacity: 1;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      background-color: $white;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  }
+  .nav-btns {
+    flex-direction: row;
+  }
+}
+
+@include breaks(large) {
+  nav {
+    ul {
+      margin-right: calc(2rem + 5vw);
+    }
+  }
+}
