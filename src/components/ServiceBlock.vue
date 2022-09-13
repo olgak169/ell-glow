@@ -1,7 +1,7 @@
 <template>
   <div class="service-block">
     <div class="service-img" :class="{ light: service.background === 'light' }">
-      <img :src="`/img/services/${service.img}`" alt="" />
+      <img :src="`./img/services/${service.img}`" alt="Service image" />
     </div>
     <article class="service-description service-main" v-if="serviceMain">
       <h2 class="service-name">{{ service.name }}</h2>

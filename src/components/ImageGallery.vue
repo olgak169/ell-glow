@@ -5,7 +5,7 @@
         <Transition name="img">
           <div class="gallery-item" v-show="index == currentImg">
             <div class="gallery-image">
-              <img :src="`/img/${folderName}/${img}`" :alt="`Gallery image ${index}`" />
+              <img :src="`./img/${folderName}/${img}`" :alt="`Gallery image ${index}`" />
             </div>
           </div>
         </Transition>

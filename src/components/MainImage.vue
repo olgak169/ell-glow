@@ -162,7 +162,7 @@
         </mask>
       </defs>
       <image
-        :xlink:href="`/img/main/a-img-03.jpg`"
+        :xlink:href="`./img/main/a-img-03.jpg`"
         width="600"
         height="750"
         mask="url(#mask-group)"
@@ -170,7 +170,7 @@
         :class="{ show: counter == 1 }"
       ></image>
       <image
-        :xlink:href="`/img/main/a-img-01.jpg`"
+        :xlink:href="`./img/main/a-img-01.jpg`"
         width="600"
         height="750"
         mask="url(#mask-group)"
@@ -178,7 +178,7 @@
         :class="{ show: counter == 2 }"
       ></image>
       <image
-        :xlink:href="`/img/main/a-img-02.jpg`"
+        :xlink:href="`./img/main/a-img-02.jpg`"
         width="600"
         height="750"
         mask="url(#mask-group)"
@@ -186,7 +186,7 @@
         :class="{ show: counter == 3 }"
       ></image>
       <image
-        :xlink:href="`/img/main/a-img-04.jpg`"
+        :xlink:href="`./img/main/a-img-04.jpg`"
         width="600"
         height="750"
         mask="url(#mask-group)"
@@ -194,7 +194,7 @@
         :class="{ show: counter == 4 }"
       ></image>
       <image
-        :xlink:href="`/img/main/a-img-05.jpg`"
+        :xlink:href="`./img/main/a-img-05.jpg`"
         width="600"
         height="750"
         mask="url(#mask-group)"
