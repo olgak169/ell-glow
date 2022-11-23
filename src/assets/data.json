@@ -1,22 +1,31 @@
 {
   "services": [
     {
-      "name": "Mini Facial",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "slug": "microcurrent",
+      "name": "Microcurrent",
+      "process": [],
+      "description": "Microcurrent facials increase cellular activity by helping to tighten and smoothen the muscles and connective tissues of the face. ",
       "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+        "muscle re-education",
+        "better product penetration",
+        "increased natural production of collagen and elastin",
+        "increase in protein synthesis"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [
+        "Microcurrent facial at Ell Glow offers powerful and effective tool to aid in the battle of anti-aging by diminishing the appearance of the skin, and reducing the overall visual appearance of aging.The mild electrical pulses stimulate your facial muscles, and create a more toned and lifted appearance with regular use-just like a sculpting gym workout for your face. Microcurrent's main benefits go far beyond that of just a lift: it also boosts circulation, enhances penetration of skincare products, and stimulates collagen and elastin production. Additionally, it stimulates ATP( adenosine triphosphate), which is essentially muscle energy."
+      ],
+      "price": [80],
+      "duration": [30],
+      "packageInfo": [],
       "img": "service-img-01.jpg",
       "background": null
     },
     {
-      "name": "Microdermabrasion",
+      "slug": "age-defyne",
+      "name": "Age defyne",
+      "process": [
+        "Double cleansing, exfoliation, extraction, massage, microcurrent, mask, moisturizer SPF / night cream, eye cream, lip balm."
+      ],
       "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
       "benefits": [
         "improves circulation",
@@ -25,104 +34,237 @@
         "increases collagen",
         "smoothes fine lines and wrinkles"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [],
+      "price": [115],
+      "duration": [50],
+      "packageInfo": [],
       "img": "d-img-03.png",
       "background": "dark"
     },
     {
-      "name": "Chemical peel",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "slug": "facial-massage",
+      "name": "Facial massage",
+      "process": [],
+      "description": "Stimulating every muscle on your face inside and out, creating defined cheekbones, sculpted jawline and refreshed face.",
       "benefits": [
         "improves circulation",
         "tones facial muscles",
         "releases toxins and tension",
-        "increases collagen",
+        "increases collagen production",
         "smoothes fine lines and wrinkles"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [
+        "Stimulating every muscle on your face inside and out, creating defined cheekbones, sculpted jawline and refreshed face.",
+        "ENDOSPHERES SCULPTING FACIAL MASSAGE",
+        "Complete facial rejuvenation, working every single muscle beneath the skin to ensure tone, elasticity, collagen production and more defined contours of the face using micro-vibration technology.",
+        "BUCCAL MASSAGE",
+        "Absolute innovation in face lifting and sculpting, modern youth potion using unique manual techniques, improves fine lines, quality of epidermis, blood circulation and effective lymphatic drainage. This treatment is performed by innovative and renowned therapist worldwide. Working carefully inside the cheek, lip and jawline, our professional therapist becomes a skillful sculptor, creating ideal, youth-like lines. A course of 5-8 treatments is recommended for best results.",
+        "FACE REJUVENATION WITHOUT INJECTION",
+        "Face massage is done by simultaneously massaging the inner and outer muscles of the mouth. Working carefully inside the cheek, lip and jawline. It's not associated with injection therapy.",
+        "ANTI-STRESS EFFECT",
+        "Sculptured lifting face massage guaranty to eliminate psycho-emotional blocks and helps to cope with stress."
+      ],
+      "price": [80],
+      "duration": [30],
+      "packageInfo": [],
       "img": "service-img-02.png",
       "background": null
     },
     {
-      "name": "European facial",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
-      "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+      "slug": "deep-cleansing-manual-facial",
+      "name": "Deep cleansing manual facial",
+      "process": [
+        "Double cleansing with ultrasonic spatula, enzyme exfoliation, extra-extraction, toner, light massage, mask, moisturizer SPF / night cream, eye cream, lip balm."
       ],
-      "price": 80,
-      "duration": 30,
+      "description": "Deep cleansing treatment is vital for healthy radiant skin while removing build-up of impurities, bacteria and dirt with manual extraction if necessary.",
+      "benefits": [
+        "clears clogged pores & blackheads",
+        "gently exfoliates",
+        "reduction of oil production",
+        "eliminates toxins, dirt and bacteria",
+        "gives fresh, breathable and radiant skin"
+      ],
+      "moreInfo": [
+        "Bespoke treatment designed for your clear, glowing, healthy skin. A deep cleansing manual facial at Ell Glow skincare studio is the physical removal of debris and clogging from pores to ensure a flawless complexion.",
+        "This Facial treatment is available for anyone who is looking for clean and glowing skin, suitable for all ages and all skin types. Cosmetic products used in the process depend on your skin type and chosen during your consultation, for best suited deep cleansing facial program.",
+        "WE TREAT A VARIETY OF SKING ISSUES",
+        "After the skin assessment, getting a regular bespoke facial treatment will help treat any issues and heal your skin. From blackheads, sunspots and sun damage to loss of firmness and elasticity, it can be minimized or completely treated with the right facial treatment.",
+        "SKING REJUVINATION",
+        "The exfoliation, extraction, massage, steam and mask application during a facial treatment lead to skin rejuvenation, or in other words — a fresh, renewed skin. This improves the appearance of the skin, giving it a healthy, radiant glow and balanced complexion.",
+        "A DEEP HYDRATION",
+        "Feed the skin with vitamins, minerals and nutrients such as vitamins A,C and E, as well as peptides and hyaluronic acid, a process that brings other benefits and will leave your complexion refreshed and radiant.",
+        "One treatment a month gives visible result."
+      ],
+      "price": [95],
+      "packageInfo": [],
+      "duration": [50],
       "img": "d-img-05.png",
       "background": "light"
     },
     {
-      "name": "Man's facial",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
-      "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+      "slug": "acne-treatment",
+      "name": "Acne treatment",
+      "process": [
+        "Double cleansing with ultrasonic spatula, enzyme exfoliation, extra-extraction, toner, high frequency treatment, light massage, clay mask, moisturizer SPF / night cream,  eye cream, lip balm"
       ],
-      "price": 80,
-      "duration": 30,
+      "description": "Innovative acne treatment fights the causes of acne with light frequencies to target bacteria and inflammation.",
+      "benefits": [
+        "improves active acne",
+        "reduces inflammation and bacteria",
+        "safe and visible result",
+        "no downtime",
+        "healthy clear skin"
+      ],
+      "moreInfo": [
+        "The technology uses a light-based system to treat both the cause and the visible symptoms of acne.",
+        "Contrary to what a lot of people think, acne is not limited to just adolescence. In fact, many people struggle with acne on the face and body well into their adult life. Unfortunately, acne continues to be one of the most common scarring problems doctors see. Acne is usually caused by overactive sebaceous gland that produce too much oil and clog pores.",
+        "Combined with the presence of P. acne bacteria, this is what leads to the blackheads, and inflammation associated with acne.",
+        "The innovative technology as High Frequency etc. treats both the underlining cause and the visible symptoms of acne.",
+        "It uses a combination of blue and red light delivered simulations — the blue light destroys acne-causing bacteria in the oil glands, while the red light reduces existing acne-related inflammation to promote faster healing.",
+        "Research has shown that when blue and red light are administers together, the results are much better than with just one light alone.",
+        "LYMPHATIC DRAINAGE",
+        "Enjoy smoother skin with a more even tone",
+        "VISIBLE RESULT",
+        "No downtime — resume regular activities immediately",
+        "TAILORED FOR YOUR SKIN",
+        "Customized treatment for maximum result — clear youthful radiant skin",
+        "BESPOKE",
+        "Tailor-made programs based on age, weight and build",
+        "SIMULATES MUSCLES",
+        "Improves use of energy and calories. Decreases fat mass and increases muscle mass by targeting 90% of muscle fibers",
+        "1 PER WEEK FOR A COURSE OF TREATMENTS",
+        "FAST RECOVERY TIME",
+        "IMMEDIATE VISIBLE RESULT"
+      ],
+      "price": [95],
+      "packageInfo": [],
+      "duration": [50],
       "img": "service-img-03.jpg",
       "background": null
     },
     {
-      "name": "Deep cleaning",
+      "slug": "aqua-hydro-facial",
+      "name": "Aqua / Hydro facial",
+      "process": [
+        "Double cleansing, enzyme exfoliation, AQUA/HYDRO TREATMENT, light manual extraction, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
+      ],
       "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
       "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+        "treats acne and improves pores",
+        "powerful anti-aging treatment",
+        "deep hydration and increased firmness",
+        "stimulates lymphatic drainage",
+        "customizable for any skin type"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [
+        "Hydra facial is an invigorating treatment that delivers long-term skin health. This supremely nourishing and pampering facial replenishes hydration and youthfulness. Combining deep cleansing, a light scrub and customized AHA/BHA exfoliation to regenerate skin at the subcutaneous level. Restorative creamy propolis and ginger massage cream, followed with an application of a nutritive oil complex and modeling mask.",
+        "Tailored to meet the specific needs of all skin types, it offers instant ,noticeable results with no downtime or irritation.",
+        "Only Hydra facial uses patented technology to cleanse, extract, and hydrate. Hydro facial super serum is made with nourishing ingredients that create an instantly gratifying glow flowing 5 easy steps:",
+        "DETOX",
+        "Lymphatic drainage that improves circulation of the lymph system and helps to eliminate toxins.",
+        "CLEANSE + PEEL",
+        "Uncover a new layer of skin with gentle exfoliation and relaxing resurfacing.",
+        "EXTRACT+ HYDRATE",
+        "Remove debris from pores with painless suction. Nourish with in twinset moisturizers that quench skin.",
+        "FUSE+PROTECT",
+        "Saturate the skin's surface with antioxidants and peptides to maximize your glow.",
+        "REJUVINATE",
+        "Finish with red and infrared LED lights to reduce and further stimulate collagen, supporting the natural production of Vitamin D.",
+        "IMPROVE YOUR SKIN IN DIFFERENT WAYS",
+        "It's main benefits include a more hydrated, bright, plump complexion. In addition, it can also improve signs of aging, reduce fine lines and wrinkles.",
+        "MINIMUM SIDE EFFECTS",
+        "Expect a little redness immediately following the treatment ,but it will quickly subside. Let your skin rest and soak up all of the benefits of the facial for the rest of the day.",
+        "SUITABLE FOR ANY AGE AND SKIN TYPE",
+        "This treatment will benefit teenagers with acne, as well as adults with pimples, wrinkles, and hyper-pigmentation.",
+        "Recommended once a month.",
+        "No lengthy recovery - VISIBLE RESULT"
+      ],
+      "price": [140],
+      "duration": [50],
+      "packageInfo": ["Package of 5 sessions — $600 ($100 OFF)"],
       "img": "d-img-04.png",
       "background": "dark"
     },
     {
-      "name": "Fresh and glow",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "slug": "chemical-peel",
+      "name": "Chemical peel",
+      "process": [],
+      "description": "Scientifically proven to restore skin health and improve skin texture or lack of firmness, lines and wrinkles, age spots or hyper pigmentation, active acne, acne spots, acne scars, and stretch marks.",
       "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+        "improves acne and scarring",
+        "fights pigmentation",
+        "immediate glowing clear skin",
+        "improves skin firmness",
+        "no downtime",
+        "total rejuvenation"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [
+        "Peel is a bio-revitalizing product in form of a peel, that is unique.",
+        "Skin peels work by harnessing the power of naturally occurring fruit acids and enzymes to deeply exfoliate and rejuvenate the skin. The treatment stimulates new cell growth and collagen production, helping to reveal fresher, cleaner brighter skin.",
+        "We offer a wide variety of industry leading chemical peels that effectively remove the top layer of skin cells  to realign a softer, smoother complexion.",
+        "As with all our treatments, your initial appointment with our experts will determine what steps and procedures you need to follow in order to reach your skin aims.",
+        "Every skin peel we offer may benefit you skin by:",
+        "reducing fine lines and wrinkles",
+        "controlling oil production and fewer breakouts",
+        "diminished discoloration and a more even skin tone",
+        "increased cell turnover process",
+        "overall brightened skin tone",
+        "reduced inflammatory response",
+        "softer, smoother skin",
+        "Jessner peel - is a perfect treatment that prevents damaging skin, helps to regulate sebum production, normalizes keratonization, acne, etc.",
+        "Glycolic peel - this type of peel provides gentle treatment for fine lines, acne, chronically dry skin.",
+        "Mandelic M - perfect for aged skin, uneven pigmentation and blemishes (pregnancy spots, contraceptive, liver spots).",
+        "Customized treatment - individual solutions for a variety of skin problems.",
+        "Our peels are also available as add-ons to your chosen treatment.",
+        "Please see add-ons section for prices and descriptions."
+      ],
+      "price": [95],
+      "packageInfo": [],
+      "duration": [30],
       "img": "service-img-04.png",
       "background": null
     },
     {
-      "name": "Microdermabrasion",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
-      "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+      "slug": "high-frequency-acne-treatment",
+      "name": "High frequency + Acne treatment",
+      "process": [
+        "Double cleansing, enzyme exfoliation, manual extraction, toner, HF, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
       ],
-      "price": 80,
-      "duration": 30,
+      "description": "High Frequency + acne treatment is considered a medical-grade treatment. Innovative acne treatment fights the causes of acne with high light frequency to target bacteria and inflammation.",
+      "benefits": [
+        "increases collagen production",
+        "effective skin tightening without surgery",
+        "improves active acne",
+        "reduces inflammation and bacteria",
+        "safe and visible result",
+        "healthy clear skin"
+      ],
+      "moreInfo": [
+        "Contrary to what a lot of people think, acne is not limited to just adolescence. In fact many people struggle with acne on the face and body well into their adult life. Unfortunately, acne continues to be one of the most common skincare problems doctors see.",
+        "Acne is usually caused by overactive sebaceous glands that produce too much oil and clog pores.",
+        "Combined with the presence of P. acnes bacteria, this is what leads to the blackheads, whiteheads, and inflammation associated with acne.",
+        "HF uses Intense Pulsed Light technology to treat both the underlying cause and the visible symptoms of acne.",
+        "It uses a combination of blue and red light delivered simultaneously - the blue light destroys acne-causing bacteria in the oil glands, while the red light reduces existing acne-related inflammation to promote faster-healing.",
+        "Research has shown that when blue and red light are administered together, the result are much better than with just blue light alone.",
+        "Recommended once per week for a course of treatment."
+      ],
+      "price": [95],
+      "packageInfo": [
+        "Acne treatment back  - 50 min  - $110",
+        "Acne treatment face and back - 90 min  - $190"
+      ],
+      "duration": [50],
+
       "img": "d-img-02.png",
       "background": "light"
     },
     {
-      "name": "Oxygen facial",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "slug": "microdermabrasion",
+      "name": "Microdermabrasion",
+      "process": [
+        "Advanced Environ products used, triple cleanse, dead skin cells are sloughed off the top layer of the skin with a gentle orbital microdermabrasion, gently revealing, fresh, plump healthy skin. Extractions are performed followed by a deeply nourishing and hydrating hyaluronic acid mask infusion using the micro-current to ionize the molecules and push them further into the skin. Instant results."
+      ],
+      "description": "Microdermabrasion softens fine lines and wrinkles, smooths coarsely textured skin, decreases the appearance of scarring, decreases pore size and reduces superficial hyper-pigmentation.",
       "benefits": [
         "improves circulation",
         "tones facial muscles",
@@ -130,29 +272,44 @@
         "increases collagen",
         "smoothes fine lines and wrinkles"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [],
+      "price": [80, 110],
+      "packageInfo": ["Packages of 5 sessions - $450 (100 OFF)"],
+      "duration": [30, 50],
       "img": "service-img-05.jpg",
       "background": null
     },
     {
-      "name": "Acne treatment",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
-      "benefits": [
-        "improves circulation",
-        "tones facial muscles",
-        "releases toxins and tension",
-        "increases collagen",
-        "smoothes fine lines and wrinkles"
+      "slug": "fresh-and-glow",
+      "name": "Fresh and glow",
+      "process": [
+        "Double cleansing, enzyme exfoliation, ULTRASONIC, SERUM MESOTHERAPY, treatment, light manual extraction, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
       ],
-      "price": 80,
-      "duration": 30,
+      "description": "Non-needle mesotherapy. The perfect program for every skin type.",
+      "benefits": [
+        "perfect luminous skin",
+        "perfect for all skin types",
+        "targeted serums to treat concerns",
+        "quick, relaxing and effective",
+        "deeply hydrating, powerful anti-age treatment"
+      ],
+      "moreInfo": [
+        "The treatment will benefit all skin types and all ages. Has no contraindications and is suitable for dealing with a wide range of problems.",
+        "Immediate results. Already after the first session, wrinkles are smoothed out, the oval of face is tightened, the skin becomes radiant and deeply hydrated."
+      ],
+      "price": [95],
+      "packageInfo": [],
+      "duration": [50],
       "img": "d-img-01.png",
       "background": "dark"
     },
     {
-      "name": "Age defying",
-      "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
+      "slug": "oxygen-facial",
+      "name": "Oxygen facial",
+      "process": [
+        "Double cleansing, enzyme exfoliation, oxygen treatment, light manual extraction, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
+      ],
+      "description": "This treatment is designed to nourish your skin and promote collagen production. It involves a technology that is used for spraying highly concentrated molecules of oxygen right into your epidermis (the outer layer of your skin). The oxygen that’s applied to your face and neck is infused with vitamins, minerals, essential nutrients, and botanical extracts.",
       "benefits": [
         "improves circulation",
         "tones facial muscles",
@@ -160,13 +317,38 @@
         "increases collagen",
         "smoothes fine lines and wrinkles"
       ],
-      "price": 80,
-      "duration": 30,
-      "img": "service-img-06.jpg",
+      "moreInfo": [],
+      "price": [140],
+      "packageInfo": [],
+      "duration": [50],
+      "img": "service-img-02.png",
       "background": null
     },
     {
-      "name": "Aqua facial",
+      "slug": "european-facial",
+      "name": "European facial",
+      "process": [],
+      "description": "Advanced Environ products used, triple cleanse, dead skin cells are sloughed off the top layer of the skin with a gentle orbital microdermabrasion, gently revealing, fresh, plump healthy skin. Extractions are performed followed by a deeply nourishing and hydrating hyaluronic acid mask infusion using the micro-current to ionize the molecules and push them further into the skin. Instant results.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "moreInfo": [],
+      "price": [85],
+      "packageInfo": [],
+      "duration": [40],
+      "img": "d-img-05.png",
+      "background": "light"
+    },
+    {
+      "slug": "mens-facial",
+      "name": "Men's facial",
+      "process": [
+        "Double cleansing, enzyme exfoliation, light manual extraction, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
+      ],
       "description": "Promote feeling of being cleansed and refreshed, removes excess sebum, impurities, and pollution for clean skin that feels fresh.",
       "benefits": [
         "improves circulation",
@@ -175,9 +357,61 @@
         "increases collagen",
         "smoothes fine lines and wrinkles"
       ],
-      "price": 80,
-      "duration": 30,
+      "moreInfo": [],
+      "price": [95],
+      "packageInfo": [],
+      "duration": [40],
+      "img": "service-img-03.jpg",
+      "background": "light"
+    },
+
+    {
+      "slug": "mini-facial",
+      "name": "Mini facial",
+      "process": [
+        "Cleansing, enzyme exfoliation, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
+      ],
+      "description": "Advanced Environ products used.",
+      "benefits": [
+        "improves circulation",
+        "tones facial muscles",
+        "releases toxins and tension",
+        "increases collagen",
+        "smoothes fine lines and wrinkles"
+      ],
+      "moreInfo": [],
+      "price": [80],
+      "packageInfo": [],
+      "duration": [30],
       "img": "d-img-06.png",
+      "background": "light"
+    },
+    {
+      "slug": "led-light-treatment",
+      "name": "LED light treatment",
+      "process": [
+        "A relaxing anti-aging facial includes Environs triple cleanse, steam, customized exfoliation and extractions. This is followed by a relaxing session of LED 830 nm. It is a wound healing wavelength that stimulates cell repair and rejuvenation from deep within the skin, penetrating to the dermal layer. The facial includes a beautiful relaxing hand, arm and foot massage and finished with a hydrating and skin softening Environ kaolin clay mask and shoulder massage."
+      ],
+      "description": "A non-invasive light therapy that enhances and heals your skin. We will help you achieve a healthy glow you always dreamed of.",
+      "benefits": [
+        "promotes plumpness and collagen production",
+        "reduces fine lines and wrinkles",
+        "improves acne and scaring",
+        "increases elasticity and firmness",
+        "lightens pigmentation and age spots"
+      ],
+      "moreInfo": [
+        "With LED lights therapy you can reduce the appearance of fine lines and wrinkles, acne, improve collagen production, resulting in the radiant, beautiful complexion you always dreamed of.",
+        "LED Light can be used as an add-on to our facials or a stand alone treatment.",
+        "STIMULATE FIBROBLASTS IN THE CELLS",
+        "The LED promotes the elasticity and youthfulness of your skin.",
+        "GET THAT HEALTHY GLOW",
+        "Revitalize and brighten your skin, by killing bacteria on your skin, physiotherapy prevents future breakouts and cleans the skin. It also promotes the building of collagen by helping cell metabolism, which then reduces the appearance of fine lines and wrinkles."
+      ],
+      "price": [105],
+      "packageInfo": [],
+      "duration": [50],
+      "img": "service-img-04.png",
       "background": "light"
     }
   ],
@@ -254,8 +488,9 @@
     "Hair services"
   ],
   "mainText": [
-    "You will be served by certified well-trained specialists: therapists, dermatologists and nail technicians with extensive experience.",
-    "Only Top quality treatments performed by High class professionals all in one place offers total make-over solutions for your hands, feet, brows and lashes, as well as make-up and full menu of hair services."
+    "At EllGlow Skincare and Beauty Studio you will be served by certified well trained specialists. EllGlow invites and offers a Social facial for men and women alike. Enjoy your time at EllGlow together with your friends. We provide excellent level of service by using top quality products and treatments. Our aim is to create a special personalized programm to care for the beauty and health of your skin and hair.",
+    "We source latest innovations, products and devices for your beauty and aesthetic needs.",
+    "Ell Glow is here to help you look your best, and give you the best skin you can possibly have for a life time."
   ],
   "reviews": [
     {
@@ -283,6 +518,20 @@
       "text": "I went in for a facial with Elle and I loved it. She was very professional and would communicate and explain to me what she was going to do. I felt so relaxed and really enjoyed my facial with her. My skin felt great after and I would for sure go back with Elle for another facial."
     }
   ],
-  "locationGallery": ["e1-img-01.jpg", "e1-img-02.jpg", "e1-img-03.jpg", "e1-img-04.jpg"],
-  "aboutGallery": ["e2-img-01.jpeg", "e2-img-02.jpg", "e2-img-03.png", "e2-img-04.jpg"]
+  "locationGallery": [
+    "loc01.jpeg",
+    "loc02.jpeg",
+    "loc03.jpeg",
+    "loc04.jpeg",
+    "loc05.jpeg",
+    "loc06.jpeg"
+  ],
+  "aboutGallery": [
+    "ab01.jpeg",
+    "ab02.jpeg",
+    "ab03.jpeg",
+    "ab04.jpeg",
+    "ab05.jpeg",
+    "ab06.jpeg"
+  ]
 }

@@ -6,7 +6,7 @@
         All procedures are done with high quality products available for purchase. Please
         book in advance.
       </p>
-      <router-link to="/contact" class="service-cta book-btn">Book now</router-link>
+      <router-link to="/contact" class="btn-cta service-hero-cta">Book now</router-link>
     </div>
 
     <ScrollTitle :title="'Face'" :color="0" />
@@ -16,16 +16,11 @@
         your skin and body needs first in the trusted hands of our experienced laser and
         skin specialists.
       </p>
-      <p>At EllGlow we offer:</p>
+      <p>At Ell Glow we offer:</p>
       <h5>~Facial treaments</h5>
       <p>Rejuvenate your skin with our personalised skin treatments.</p>
       <h5>~Chemical peels</h5>
       <p>Stimulates the production of collagen to create smooth and healthy skin.</p>
-      <h5>~Cosmetic injectables</h5>
-      <p>
-        Ageing is a natural process, however we can keep you looking youthful with our
-        injectables.
-      </p>
     </article>
     <section class="service-section container">
       <ServiceBlock
@@ -51,30 +46,60 @@
     <article class="section-description t-serif">
       <p>Other services we offer. Call for consultation and available times.</p>
     </article>
+    <button class="btn-up" @click="toTop" v-if="btnTopShow">to top</button>
   </main>
 </template>
 <script setup>
-  import { onMounted } from 'vue'
+  import { onBeforeUnmount, onMounted, ref } from 'vue'
   import ScrollTitle from '../components/ScrollTitle.vue'
-  import dataSet from '../assets/data.json'
+  // import dataSet from '../assets/data.json'
   import ServiceBlock from '../components/ServiceBlock.vue'
   import ScrollTrigger from 'gsap/ScrollTrigger'
   import gsap from 'gsap'
 
+  const props = defineProps({
+    dataSet: Object,
+  })
+  const btnTopShow = ref(false)
+  const anim = ref(null)
+  // const content = ref(null)
+
   gsap.registerPlugin(ScrollTrigger)
 
-  onMounted(() => {
+  const scrollAnim = () => {
     const content = gsap.utils.toArray('.service-description')
 
-    content.forEach(item => {
-      const anim = gsap.from(item, { opacity: 0, yPercent: -20, paused: true })
+    anim.value = gsap.fromTo(
+      content,
+      { opacity: 0.5, yPercent: -20 },
+      { paused: true, opacity: 1, yPercent: 0 }
+    )
+    ScrollTrigger.create({
+      trigger: item,
+      start: 'top 10%',
 
-      ScrollTrigger.create({
-        trigger: item,
-        start: 'top bottom',
-        scrab: 0.5,
-        onEnter: () => anim.play(),
-      })
+      onEnter: () => anim.value.play(),
     })
+    // content.forEach(item => {
+    // })
+    console.log(content)
+  }
+
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  onMounted(() => {
+    window.addEventListener('scroll', e => {
+      btnTopShow.value = window.scrollY > 900
+    })
+    // scrollAnim()
+  })
+  onBeforeUnmount(() => {
+    // anim.value.kill()
   })
 </script>

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="header-container container">
+    <div class="header-container">
       <IconLogo />
       <div class="menu-btns" v-if="menuBtns">
         <button class="menu-open-btn" v-show="!menuOpen" @click="menuOpen = true">

@@ -132,7 +132,7 @@
 }
 
 .main-title {
-  font-size: var(--fs-xxl-fluid);
+  font-size: var(--step-5);
   color: $accent-01;
   line-height: 0.9;
 
@@ -141,12 +141,9 @@
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #b5717c;
   }
-  span {
-    font-size: var(--fs-xxl-fluid);
-    font-weight: bold;
-  }
+
   small {
-    font-size: var(--fs-lg);
+    font-size: var(--step-3);
     font-weight: 300;
   }
 }
@@ -155,7 +152,7 @@
   font-weight: 400;
   color: $white;
   position: relative;
-  font-size: var(--fs-400);
+  font-size: var(--step-0);
   margin: 2em 0;
   z-index: 2;
   &:hover::before {

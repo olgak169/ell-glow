@@ -1,10 +1,11 @@
 <template>
   <div class="service-block">
     <div class="service-img" :class="{ light: service.background === 'light' }">
-      <img :src="`./img/services/${service.img}`" alt="Service image" />
+      <img :src="`/img/services/${service.img}`" alt="" />
     </div>
     <article class="service-description service-main" v-if="serviceMain">
       <h2 class="service-name">{{ service.name }}</h2>
+
       <p>
         {{ service.description }}
       </p>
@@ -14,12 +15,17 @@
       </ul>
       <div class="service-details">
         <div>
-          <p>~ {{ service.duration }}min</p>
-          <p>~ {{ service.price }}$</p>
+          <div class="flex">
+            <span v-for="dur in service.duration">~{{ dur }}min</span>
+          </div>
+          <div class="flex">
+            <span v-for="price in service.price">~{{ price }}$</span>
+          </div>
         </div>
-        <router-link to="/contact" class="service-book-btn t-sans book-btn"
-          >Book now</router-link
+        <RouterLink :to="`/services/${service.slug}`" class="btn-cta btn-info"
+          >More info</RouterLink
         >
+        <router-link to="/contact" class="btn-cta btn-book">Book now</router-link>
       </div>
     </article>
     <div class="service-description addon-container" v-else>
@@ -37,8 +43,11 @@
   </div>
 </template>
 <script setup>
+  import { RouterLink } from 'vue-router'
+
   const props = defineProps({
     service: Object,
     serviceMain: Boolean,
   })
+  // console.log(props.service)
 </script>

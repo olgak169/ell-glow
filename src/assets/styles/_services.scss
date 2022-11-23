@@ -1,5 +1,49 @@
 @import 'variables';
-
+.hero-services-details {
+  background-image: linear-gradient(
+      110.9deg,
+      #fc6e9bcd 8.4%,
+      #fc9373c0 53.2%,
+      #ff7272da 100.3%
+    ),
+    url('/img/services/serv-detail-cover.jpg');
+  background-position: bottom center;
+  h1 {
+    text-transform: uppercase;
+    font-size: var(--step-5);
+    color: $white;
+    text-shadow: 1px 1px 2px #b5717c;
+  }
+  ul {
+    color: $accent-01;
+    font-size: var(--step-0);
+  }
+}
+.container-service-details {
+  margin: 0 auto;
+  --flex-inline-align: flex-start;
+  max-width: 75ch;
+  padding: 1em var(--space-m) 4em var(--space-m);
+  color: $black;
+  .btn-back {
+    background-color: $accent-02;
+    color: $white;
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.2rem;
+    min-width: 7.5rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  h2 {
+    font-size: var(--step-1);
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #989898;
+  }
+  p,
+  h3 {
+    font-size: var(--step-0);
+    font-family: 'Lora', serif;
+  }
+}
 .hero-services {
   background-image: linear-gradient(
       110.9deg,
@@ -12,34 +56,29 @@
   gap: 1.5rem;
 
   p {
-    font-size: var(--fs-400);
+    font-size: var(--step-0);
     color: $white;
     max-width: 30ch;
   }
-  .service-cta {
-    color: $white;
-    font-size: var(--fs-500);
-    position: relative;
-    z-index: 3;
+  .service-hero-cta {
+    --btn-fs: var(--step-1);
+    --before-crcl-left: 0.2em;
     &:hover::before {
       background-color: $accent-03;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0.2em;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 2em;
-      height: 2em;
-      background-color: $accent-02;
-      border-radius: 50%;
-      z-index: -1;
-      transition: background-color 0.5s ease;
-    }
   }
 }
-
+.btn-up {
+  position: fixed;
+  bottom: 3em;
+  right: 4rem;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-color: $accent-02;
+  color: $white;
+  z-index: 4;
+}
 .section-description {
   margin: 0 auto;
   padding: 0 1rem;
@@ -53,13 +92,17 @@
     font-weight: 500;
   }
 }
+.service-section {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
 .service-block {
   font-family: 'Lora', serif;
   color: $black;
   &:nth-of-type(even) .service-img {
     background-color: $accent-01;
     color: $white;
-    min-height: 15.625rem;
+    min-height: 25rem;
     display: grid;
     place-content: center;
     padding: 2rem 3rem;
@@ -100,31 +143,25 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 10rem;
+    gap: 5rem;
     p {
       font-size: 0.9rem;
     }
   }
-  .service-book-btn {
+  a {
     color: inherit;
-    font-size: var(--fs-400);
+    font-size: var(--step-0);
+  }
+  .btn-info,
+  .btn-book {
+    --before-crcl-clr: hsl(341, 94%, 82%);
     &:hover::before {
       background-color: $accent-03;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0.3em;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 2em;
-      height: 2em;
-      background-color: $accent-02;
-      border-radius: 50%;
-      z-index: -1;
-      transition: background-color 0.5s ease;
-    }
   }
+  // .btn-info {
+  //   margin: 1em 0;
+  // }
 }
 .addon-container {
   padding: 2rem;
@@ -155,11 +192,11 @@
   }
   .service-block {
     .service-description {
-      max-width: 50ch;
-      padding: 2rem;
+      // max-width: 50ch;
+      padding: 0 2rem;
     }
     .service-img {
-      max-height: 31.25rem;
+      // max-height: 31.25rem;
       overflow: hidden;
     }
   }
@@ -180,9 +217,10 @@
     grid-auto-flow: dense;
     align-items: center;
     justify-content: center;
+
     margin: 0;
     .service-description {
-      padding: 2rem 0 2rem 2rem;
+      padding: 1rem 0 0 2rem;
     }
     // every 2nd image to right
     &:nth-child(2n + 2) > div:first-child {
@@ -192,7 +230,7 @@
     &:nth-child(2n + 2) {
       text-align: right;
       .service-description {
-        padding: 2rem 2rem 2rem 0 !important;
+        padding: 1rem 2rem 0 0 !important;
         .service-details {
           flex-direction: row-reverse;
           justify-content: flex-start;

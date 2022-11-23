@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   position: relative;
   font-weight: normal;
 }
@@ -11,6 +12,8 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: $accent-05;
 }
 
 body {
@@ -32,24 +35,21 @@ svg {
 }
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+ul {
+  list-style: none;
 }
 a,
 button,
 input,
 textarea {
   font-family: inherit;
-}
-.book-btn {
-  font-family: 'Lato', sans-serif;
-  background: none;
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .t-cursive {
@@ -70,40 +70,64 @@ textarea {
   position: absolute;
   white-space: nowrap;
 }
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+// .container {
+//   max-width: 95%;
+//   margin: 0 auto;
+// }
+// @include breaks(medium) {
+//   .container {
+//     max-width: 90%;
+//   }
+// }
+// @include breaks(large) {
+//   .container {
+//     width: 90%;
+//     max-width: 67.5rem;
+//   }
+// }
+// .flex {
+//   display: flex;
+//   gap: var(--gap, 1rem);
+// }
+
 .container {
-  max-width: 95%;
+  position: relative;
+  max-width: 75rem;
   margin: 0 auto;
+  padding: 0 var(--space-s);
+  height: 100%;
+  // @include breaks(large) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
 }
-@include breaks(medium) {
-  .container {
-    max-width: 90%;
-  }
-}
-@include breaks(large) {
-  .container {
-    width: 90%;
-    max-width: 67.5rem;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-columns, auto-fill),
+    minmax(var(--grid-min-size, 16rem), 1fr)
+  );
+  gap: var(--grid-gap, var(--space-s));
 }
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  flex-wrap: wrap;
+  gap: var(--flex-gap, var(--space-s));
+  justify-content: var(--flex-inline-align, flex-start);
+  align-items: var(--flex-block-align, center);
 }
-.hero {
-  background-size: cover;
-
-  margin: 0 auto;
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 13rem 0 3rem 0;
-  h1 {
-    font-size: var(--fs-xl);
-    color: $accent-01;
-    line-height: 1;
-  }
+  gap: var(--flex-gap, var(--space-s));
+  justify-content: var(--flex-block-align, flex-start);
+  align-items: var(--flex-inline-align, center);
 }
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.9s ease;

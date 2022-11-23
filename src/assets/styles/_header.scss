@@ -15,7 +15,9 @@ header {
   overflow-x: hidden;
 }
 .header-container {
-  padding: 2rem 0;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem var(--space-m);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,12 +38,15 @@ header {
     height: 3rem;
     background: transparent;
   }
+  @include breaks(medium) {
+    display: none;
+  }
 }
 nav {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: $accent-04;
+  background: $accent-05;
   position: fixed;
   min-height: 100vh;
   top: 0;
@@ -53,14 +58,12 @@ nav {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease;
 
   ul {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 0;
   }
   a {
-    font-size: var(--fs-400);
+    font-size: var(--step-0);
   }
 }
 .nav-link {
@@ -101,13 +104,11 @@ nav {
 }
 
 @include breaks(medium) {
-  .menu-btns {
-    display: none;
-  }
   nav {
     position: relative;
     background: transparent;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     top: unset;
     left: unset;
@@ -117,9 +118,11 @@ nav {
     gap: 1.5rem;
     height: unset;
     min-height: unset;
+    flex: 1;
 
     ul {
       flex-direction: row;
+      margin-right: 2em;
     }
   }
   .nav-link {
@@ -127,31 +130,24 @@ nav {
     z-index: 2;
     &:hover::before {
       opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
     }
     &::before {
       content: '';
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) scale(0);
       border-radius: 50%;
       width: 2em;
       height: 2em;
-      background-color: $white;
+      background-color: $accent-05;
       z-index: -1;
       opacity: 0;
-      transition: opacity 0.5s ease;
+      transition: opacity 0.3s ease, transform 0.4s ease-out;
     }
   }
   .nav-btns {
     flex-direction: row;
-  }
-}
-
-@include breaks(large) {
-  nav {
-    ul {
-      margin-right: calc(2rem + 5vw);
-    }
   }
 }

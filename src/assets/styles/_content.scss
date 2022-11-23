@@ -1,0 +1,49 @@
+@import 'variables';
+
+.book-btn {
+  font-family: 'Lato', sans-serif;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-cta {
+  color: var(--btn-clr, $white);
+  font-size: var(--btn-fs, --step-1);
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: var(--before-crcl-left, 0);
+    transform: translate(-50%, -50%);
+    width: 2em;
+    height: 2em;
+    background-color: var(--before-crcl-clr, $accent-02);
+    border-radius: 50%;
+
+    transition: background-color 0.5s ease;
+  }
+}
+.hero {
+  background-size: cover;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 13rem 0 3rem 0;
+  h1 {
+    font-size: var(--fs-xl);
+    color: $accent-01;
+    line-height: 1;
+  }
+}
