@@ -11,7 +11,7 @@
       </p>
       <h3>Benefits</h3>
       <ul>
-        <li v-for="(name, index) in service.benefits" :key="index">{{ name }}</li>
+        <li v-for="(name, index) in service.benefits" :key="index">* {{ name }}</li>
       </ul>
       <div class="service-details">
         <div>
@@ -44,10 +44,34 @@
 </template>
 <script setup>
   import { RouterLink } from 'vue-router'
+  import ScrollTrigger from 'gsap/ScrollTrigger'
+  import gsap from 'gsap'
+  import { onMounted } from 'vue'
 
   const props = defineProps({
     service: Object,
     serviceMain: Boolean,
   })
   // console.log(props.service)
+  // gsap.registerPlugin(ScrollTrigger)
+
+  // const scrollAnim = () => {
+  //   // const content = gsap.utils.toArray('.service-description')
+
+  //   gsap.from('.service-description', {
+  //     x: -20,
+  //     opacity: 0.1,
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       start: '10% center',
+  //       end: 'center bottom',
+  //       markers: true,
+  //       toggleActions: 'restart play pause none',
+  //     },
+  //   })
+  // }
+  // onMounted(() => {
+  //   scrollAnim()
+  //   ScrollTrigger.refresh()
+  // })
 </script>

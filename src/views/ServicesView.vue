@@ -61,28 +61,26 @@
     dataSet: Object,
   })
   const btnTopShow = ref(false)
-  const anim = ref(null)
+  // const anim = ref(null)
   // const content = ref(null)
 
   gsap.registerPlugin(ScrollTrigger)
 
   const scrollAnim = () => {
-    const content = gsap.utils.toArray('.service-description')
-
-    anim.value = gsap.fromTo(
-      content,
-      { opacity: 0.5, yPercent: -20 },
-      { paused: true, opacity: 1, yPercent: 0 }
-    )
-    ScrollTrigger.create({
-      trigger: item,
-      start: 'top 10%',
-
-      onEnter: () => anim.value.play(),
+    const content = gsap.utils.toArray('.service-main')
+    content.forEach(item => {
+      gsap.from(item.children, {
+        scale: 0.8,
+        opacity: 0.8,
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: '20% center',
+          end: '+=400',
+        },
+        immediateRender: false,
+      })
     })
-    // content.forEach(item => {
-    // })
-    console.log(content)
   }
 
   const toTop = () => {
@@ -92,14 +90,15 @@
       behavior: 'smooth',
     })
   }
-
+  const showBtn = () => {
+    btnTopShow.value = window.scrollY > 900
+  }
   onMounted(() => {
-    window.addEventListener('scroll', e => {
-      btnTopShow.value = window.scrollY > 900
-    })
-    // scrollAnim()
+    window.addEventListener('scroll', showBtn)
+    scrollAnim()
   })
   onBeforeUnmount(() => {
     // anim.value.kill()
+    window.removeEventListener('scroll', showBtn)
   })
 </script>

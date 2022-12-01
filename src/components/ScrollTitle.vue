@@ -19,8 +19,7 @@
   const size = ref(0)
   const counter = ref(0)
 
-  let tl
-  let tl2
+  const tl = gsap.timeline()
 
   const colors = [
     {
@@ -36,26 +35,17 @@
       font: '#ff5392',
     },
   ]
-
-  window.addEventListener('resize', () => {
+  const resize = () => {
     size.value = window.innerWidth
     counter.value = Math.round(size.value / 75 + 5)
-  })
+  }
 
   onMounted(() => {
+    window.addEventListener('resize', resize)
     size.value = window.innerWidth
     counter.value = Math.round(size.value / 75 + 5)
-    // console.log(colors[props.color].bg)
-    // tl =  gsap.timeline()
-    // tl.to('#scrollingText', {
-    //   x: 50,
-    //   duration: 20,
-    //   repeat: -1,
-    //   ease: 'linear',
-    //   yoyo: true,
-    // })
-    tl2 = gsap.timeline()
-    tl2.to(`#scrollingText-${props.title}`, {
+
+    tl.to(`#scrollingText-${props.title}`, {
       xPercent: -30,
       scrollTrigger: {
         trigger: `#scrollingText-${props.title}`,
@@ -64,7 +54,8 @@
     })
   })
   onBeforeUnmount(() => {
-    tl2.kill()
+    tl.kill()
+    window.removeEventListener('resize', resize)
   })
   //
 </script>

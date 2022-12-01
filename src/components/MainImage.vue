@@ -238,7 +238,7 @@
     tl.to('.text-blob', { opacity: 1, scale: 0.8 })
   })
   onBeforeUnmount(() => {
-    tl.kill()
+    tl.revert()
   })
   //
 </script>

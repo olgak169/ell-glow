@@ -2,6 +2,7 @@
   <main>
     <div class="hero hero-about">
       <h1 class="t-cursive">About us</h1>
+      <!-- <iframe src="https://www.youtube.com/watch?v=mC_N4YfEU6E" frameborder="0"></iframe> -->
     </div>
 
     <section class="about-section container">
