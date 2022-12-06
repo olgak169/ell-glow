@@ -121,10 +121,10 @@
   border-radius: 0.5rem;
   box-shadow: var(--shadow-lg);
   .text-bg {
-    color: $accent-01;
     width: 100%;
     padding: 2rem 0;
     p {
+      color: $dark;
       max-width: 40ch;
       margin: 0.5rem auto;
     }
@@ -133,7 +133,7 @@
 
 .main-title {
   font-size: var(--step-5);
-  color: $accent-01;
+  color: $dark;
   line-height: 0.9;
 
   p {

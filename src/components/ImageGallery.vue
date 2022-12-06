@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-container" :class="{ 'left-flex': leftFlex == true }">
-    <div class="gallery-imgs">
+    <div :class="leftFlex == true ? 'gallery-imgs' : 'gallery-items'">
       <template v-for="(img, index) in imgs" :key="index">
         <Transition name="img">
           <div class="gallery-item" v-show="index == currentImg">

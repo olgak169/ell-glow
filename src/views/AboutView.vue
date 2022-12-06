@@ -1,36 +1,46 @@
 <template>
   <main>
     <div class="hero hero-about">
-      <h1 class="t-cursive">About us</h1>
-      <!-- <iframe src="https://www.youtube.com/watch?v=mC_N4YfEU6E" frameborder="0"></iframe> -->
+      <video
+        playsinline
+        autoplay="true"
+        muted
+        loop
+        :src="'./img/about/bg-video.mp4'"
+        type="video/mp4"
+      ></video>
+      <div class="hero-overlay"></div>
     </div>
 
     <section class="about-section container">
       <div class="t-serif flow">
+        <h1>About Ell Glow</h1>
         <p>
-          Ell Glow Beauty is a Unique European Skin & Hair Studio in Orange County that
-          covers all your beauty needs. Your Journey start as you step into our relaxing
-          and cozy atmosphere built with you in mind.
+          Ell Glow Beauty is a European skin and hair studio in Orange County that offers
+          a full range of services for your beauty needs. Our contemporary and tranquil
+          atmosphere offers all the amenities you could desire, from peaceful surroundings
+          to state-of-the-art equipment. Immerse yourself in a world of comfort and
+          convenience, where you can relax and enjoy the best of what modern technology
+          has to offer.
         </p>
         <p>
-          EllGlow was established by Elle Rice, who is passionate about her custumers to
-          give each of her clients a best experience. As a problem solver for difficult
-          Skin and Hair, Elle`s attention to details makes sure every client looks and
-          feels their absolute Best.
+          Elle Rice founded Ell Glow, a boutique beauty studio, with the mission of giving
+          each of her clients the best experience possible. As a problem solver for
+          difficult skin and hair issues, Elle's attention to detail makes sure every
+          client looks and feels their absolute best. Each day our team works passionately
+          to ensure we deliver only the latest, safest and proven innovative technology
+          and products that are unique and appropriate for our clients.
         </p>
         <p>
-          At the core of the Ell Glow philosophy is understanding the individual
-          requirements of each clients and constructing a personal,caring approach to
-          achieve targeting result. Each day our team works passionately to ensure we
-          deliver to you only the latest,safest,proven innovative technology and products
-          that are unique and appropriate for our clients. Booking your complementary
-          consultation and start seeing the result you desire.
+          The Ell Glow philosophy is built on understanding individual client needs and
+          creating a personalized care plan to achieve the target results.
         </p>
         <p>
-          We offer a full range of complimenting service and treatments. Our goal is to
-          help our clients achieve the very best Skin and Hair they can. Whether it be
-          repairing damaged skin or simply maintaining already healthy Skin and prevent
-          the effects of premature Aging.
+          We offer a full range of complimentary services and treatments. Our goal is to
+          help our clients achieve the very best skin and hair they can. Whether it be
+          repairing damaged skin or simply maintaining already healthy skin and preventing
+          premature aging, we invite you to schedule a complimentary consultation with us
+          today!
         </p>
       </div>
 

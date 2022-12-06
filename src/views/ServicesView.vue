@@ -3,8 +3,8 @@
     <div class="hero hero-services">
       <h1 class="t-cursive">Services</h1>
       <p>
-        All procedures are done with high quality products available for purchase. Please
-        book in advance.
+        Our busy holiday season is upon us. We welcome new and returning clients to
+        schedule their appointments now!
       </p>
       <router-link to="/contact" class="btn-cta service-hero-cta">Book now</router-link>
     </div>
@@ -12,14 +12,13 @@
     <ScrollTitle :title="'Face'" :color="0" />
     <article class="section-description t-serif">
       <p>
-        Designed with both men and women in mind, EllGlow is a place where you can put
-        your skin and body needs first in the trusted hands of our experienced laser and
-        skin specialists.
+        As the premier provider of laser- and light-based skin-rejuvenation technologies,
+        we have the tools, experience, and talent to help you look and feel your best.
       </p>
       <p>At Ell Glow we offer:</p>
-      <h5>~Facial treaments</h5>
+      <h5>&#10038; Facial treaments</h5>
       <p>Rejuvenate your skin with our personalised skin treatments.</p>
-      <h5>~Chemical peels</h5>
+      <h5>&#10038; Chemical peels</h5>
       <p>Stimulates the production of collagen to create smooth and healthy skin.</p>
     </article>
     <section class="service-section container">

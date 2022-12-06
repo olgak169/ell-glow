@@ -11,7 +11,9 @@
       </p>
       <h3>Benefits</h3>
       <ul>
-        <li v-for="(name, index) in service.benefits" :key="index">* {{ name }}</li>
+        <li v-for="(name, index) in service.benefits" :key="index">
+          &#10023; {{ name }}
+        </li>
       </ul>
       <div class="service-details">
         <div>
