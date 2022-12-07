@@ -31,7 +31,10 @@
     </section>
     <ScrollTitle :title="'Addons'" :color="1" />
     <article class="section-description t-serif">
-      <p>Add something special to your experience.</p>
+      <p>Let's add a little something extra to your experience!</p>
+      <p>
+        Get an additional mini treatment with your main one to get even more benefits.
+      </p>
     </article>
     <section class="addon-section container">
       <ServiceBlock
@@ -43,9 +46,20 @@
     </section>
     <ScrollTitle :title="'Other'" :color="2" />
     <article class="section-description t-serif">
-      <p>Other services we offer. Call for consultation and available times.</p>
+      <p>Here at Ell Glow we have a lot more to offer!</p>
+      <p>Check out other services that our clients enjoy.</p>
+      <p>Call us to see what services are available to book.</p>
     </article>
-    <button class="btn-up" @click="toTop" v-if="btnTopShow">to top</button>
+    <section class="other-section container">
+      <ServiceBlock
+        v-for="(item, ind) in dataSet['other']"
+        :key="ind"
+        :service="item"
+        :serviceMain="true"
+      />
+    </section>
+    <footer class="t-cursive">Come visit us soon!</footer>
+    <button class="btn-up" @click.stop="toTop" v-if="btnTopShow">to top</button>
   </main>
 </template>
 <script setup>

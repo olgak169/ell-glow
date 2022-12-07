@@ -1,4 +1,8 @@
 @import 'variables';
+
+//  -------------------------------------- //
+//  ----------- Service details ---------- //
+//  -------------------------------------- //
 .hero-services-details {
   background-image: linear-gradient(
       110.9deg,
@@ -8,15 +12,13 @@
     ),
     url('/img/services/serv-detail-cover.jpg');
   background-position: bottom center;
-  h1 {
-    text-transform: uppercase;
-    font-size: var(--step-5);
-    color: $white;
-    text-shadow: 1px 1px 2px #b5717c;
-  }
+
   ul {
     color: $accent-01;
     font-size: var(--step-0);
+  }
+  .display-title-light {
+    color: $white;
   }
 }
 .container-service-details {
@@ -25,25 +27,34 @@
   max-width: 75ch;
   padding: 1em var(--space-m) 4em var(--space-m);
   color: $black;
+  font-size: var(--step-0);
   .btn-back {
     background-color: $accent-02;
     color: $white;
-    padding: 0.5rem 1.4rem;
+    padding: 0.6rem 1.4rem;
     border-radius: 0.2rem;
     min-width: 7.5rem;
     transition: background-color 0.5s ease, color 0.5s ease;
+    &:hover {
+      background-color: $accent-03;
+    }
   }
-  h2 {
+  .details-process {
     font-size: var(--step-1);
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #989898;
+    border-bottom: 1px solid $dark;
+    color: $dark;
+    font-weight: 300;
   }
   p,
   h3 {
-    font-size: var(--step-0);
     font-family: 'Lora', serif;
   }
 }
+
+//  -------------------------------------- //
+//  --------------- Services ------------- //
+//  -------------------------------------- //
 .hero-services {
   background-image: linear-gradient(
       110.9deg,
@@ -68,33 +79,35 @@
     }
   }
 }
-.btn-up {
-  position: fixed;
-  bottom: 3em;
-  right: 4rem;
-  height: 5em;
-  width: 5em;
-  border-radius: 50%;
-  background-color: $accent-02;
-  color: $white;
-  z-index: 4;
-}
+
 .section-description {
   margin: 0 auto;
   padding: 0 1rem;
   color: $black;
+  font-size: var(--step-0);
+  @include breaks(medium) {
+    max-width: 50ch;
+    border-left: 0.5px solid $black;
+    padding: 0 0 0 2rem;
+  }
+  @include breaks(large) {
+    max-width: 60ch;
+  }
   p {
     margin-bottom: 1rem;
-    font-size: var(--fs-400);
   }
   h5 {
-    font-size: var(--fs-500);
     font-weight: 500;
+    font-size: var(--step-1);
   }
 }
 .service-section {
   display: grid;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: auto;
+  margin: 2rem auto;
+  @include breaks(large) {
+    grid-auto-rows: 1fr;
+  }
 }
 .service-block {
   font-family: 'Lora', serif;
@@ -107,16 +120,63 @@
     place-content: center;
     padding: 2rem 3rem;
   }
+
   .service-img {
     z-index: 3;
+    overflow: hidden;
+
     &.light {
       background-color: $accent-04;
+    }
+    @include breaks(medium) {
+      background-color: $accent-05;
+      color: $white;
+      min-height: 25rem;
+      display: grid;
+      place-content: center;
+      padding: 2rem 3rem;
+    }
+    @include breaks(large) {
+      padding: 0 1rem;
+    }
+  }
+}
+@include breaks(large) {
+  .service-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-content: center;
+
+    .service-description {
+      padding: 1rem 0 1rem 2rem;
+    }
+    // every 2nd image to right
+    &:nth-child(2n + 2) > div:first-child {
+      grid-column: 2;
+    }
+
+    &:nth-child(2n + 2) {
+      .service-description {
+        padding: 1rem 2rem 1rem 1.5rem !important;
+      }
+    }
+    .service-img {
+      height: 100%;
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 }
 
 .service-main {
   padding: 2rem 1.5rem;
+  p {
+    max-width: 50ch;
+  }
 
   h2,
   h3 {
@@ -124,44 +184,35 @@
     font-weight: 500;
   }
   h2 {
-    margin-bottom: 1rem;
-    font-size: var(--fs-500);
+    font-size: var(--step-1);
   }
   h3 {
-    margin: 1rem 0;
-    font-size: var(--fs-400);
+    font-size: var(--step-0);
   }
   ul {
-    list-style: none;
+    --flow-space: 0.4em;
     padding-left: 1rem;
-    margin-bottom: 2rem;
-    li {
-      margin-bottom: 0.4rem;
-    }
   }
   .service-details {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 5rem;
-    p {
-      font-size: 0.9rem;
-    }
+    --flex-gap: 2em;
+    --flex-inline-align: flex-start;
+    font-size: 0.9rem;
   }
-  a {
-    color: inherit;
-    font-size: var(--step-0);
+  .service-links {
+    --flex-gap: 5em;
   }
   .btn-info,
   .btn-book {
+    color: $dark;
+    font-size: var(--step-0);
     --before-crcl-clr: hsl(341, 94%, 82%);
+    &:hover {
+      color: $black;
+    }
     &:hover::before {
       background-color: $accent-03;
     }
   }
-  // .btn-info {
-  //   margin: 1em 0;
-  // }
 }
 .addon-container {
   padding: 2rem;
@@ -183,89 +234,24 @@
     font-size: 0.9rem;
   }
 }
-
-@include breaks(medium) {
-  .section-description {
-    max-width: 50ch;
-    border-left: 0.5px solid $black;
-    padding: 0 0 0 2rem;
-  }
-  .service-block {
-    .service-description {
-      // max-width: 50ch;
-      padding: 0 2rem;
-    }
-    .service-img {
-      // max-height: 31.25rem;
-      overflow: hidden;
-    }
-  }
-}
-
 @include breaks(large) {
-  .section-description {
-    max-width: 60ch;
-  }
-  .service-section,
   .addon-section {
     margin: 4rem auto;
-  }
-
-  .service-block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: dense;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
-    .service-description {
-      padding: 1rem 0 0 2rem;
-    }
-    // every 2nd image to right
-    &:nth-child(2n + 2) > div:first-child {
-      grid-column: 2;
-    }
-
-    &:nth-child(2n + 2) {
-      text-align: right;
-      .service-description {
-        padding: 1rem 2rem 0 0 !important;
-        .service-details {
-          flex-direction: row-reverse;
-          justify-content: flex-start;
-        }
-      }
-    }
-    .service-img {
-      height: 100%;
-      img {
-        height: 100%;
-        width: auto;
-      }
-    }
   }
 }
 
 @include breaks(x-large) {
-  .service-block {
-    &:nth-child(2n + 2) {
-      & .service-main {
-        padding: 2rem 0;
-      }
+  .addon-container {
+    max-width: 60ch;
+    flex-direction: row;
+    gap: 1.5rem;
+    & > * {
+      flex: 1;
     }
-    .addon-container {
-      max-width: 60ch;
-      flex-direction: row;
-      gap: 1.5rem;
-      & > * {
-        flex: 1;
-      }
-      .addon:nth-of-type(1) {
-        padding: 0 1.5rem 0 0;
-        border-bottom: none;
-        border-right: 0.5px solid $black;
-      }
+    .addon:nth-of-type(1) {
+      padding: 0 1.5rem 0 0;
+      border-bottom: none;
+      border-right: 0.5px solid $black;
     }
   }
 }

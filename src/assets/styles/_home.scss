@@ -2,21 +2,21 @@
 .home {
   background: radial-gradient(
       circle at 69% 3%,
-      rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0.04) 8%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.06) 8%,
       transparent 8%,
       transparent 92%
     ),
     radial-gradient(
       circle at 85% 72%,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.07) 0%,
       rgba(255, 255, 255, 0.04) 8%,
       transparent 8%,
       transparent 92%
     ),
     radial-gradient(
       circle at 43% 49%,
-      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.05) 0%,
       rgba(255, 255, 255, 0.03) 6%,
       transparent 6%,
       transparent 94%
@@ -24,48 +24,48 @@
     radial-gradient(
       circle at 12% 98%,
       rgba(255, 255, 255, 0.03) 0%,
-      rgba(255, 255, 255, 0.03) 6%,
+      rgba(255, 255, 255, 0.08) 6%,
       transparent 6%,
       transparent 94%
     ),
     radial-gradient(
       circle at 37% 52%,
-      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.06) 0%,
       rgba(255, 255, 255, 0.03) 6%,
       transparent 6%,
       transparent 94%
     ),
     radial-gradient(
       circle at 22% 59%,
-      rgba(255, 255, 255, 0.03) 0%,
-      rgba(255, 255, 255, 0.03) 6%,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.08) 6%,
       transparent 6%,
       transparent 94%
     ),
     radial-gradient(
       circle at 25% 56%,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.07) 0%,
       rgba(255, 255, 255, 0.04) 4%,
       transparent 4%,
       transparent 96%
     ),
     radial-gradient(
       circle at 22% 79%,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.07) 0%,
       rgba(255, 255, 255, 0.04) 4%,
       transparent 4%,
       transparent 96%
     ),
     radial-gradient(
       circle at 80% 81%,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.07) 0%,
       rgba(255, 255, 255, 0.04) 4%,
       transparent 4%,
       transparent 96%
     ),
     radial-gradient(
       circle at 52% 16%,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.08) 0%,
       rgba(255, 255, 255, 0.04) 4%,
       transparent 4%,
       transparent 96%
@@ -74,7 +74,20 @@
 }
 
 .main-content {
+  max-width: 39rem;
+  margin: 0 auto;
   padding: 10rem 0 2rem 0;
+  --grid-columns: 1;
+  --grid-gap: 4rem;
+
+  @include breaks(large) {
+    --grid-columns: 2;
+    --grid-gap: 2rem;
+    max-width: unset;
+  }
+  @include breaks(x-large) {
+    --grid-gap: 3rem;
+  }
 }
 
 .main-img {
@@ -84,7 +97,7 @@
     position: absolute;
     left: 25%;
     top: 0;
-    font-size: calc(64px + (80 - 64) * ((100vw - 375px) / (1600 - 375)));
+    font-size: var(--step-6);
     font-weight: 700;
     height: 100%;
     text-transform: uppercase;
@@ -113,20 +126,20 @@
     }
   }
 }
-.main-text {
-  text-align: center;
-  padding: 5em 1em 2em 1em;
-  margin: 0 0 3rem 0;
-  background: linear-gradient(30deg, #fca5c0 10%, #ff9fb9 35%, #fdaaaa 100%);
+.main-content__text {
+  color: $dark;
+  padding: 5em 1em 4em;
   border-radius: 0.5rem;
   box-shadow: var(--shadow-lg);
-  .text-bg {
-    width: 100%;
-    padding: 2rem 0;
-    p {
-      color: $dark;
-      max-width: 40ch;
-      margin: 0.5rem auto;
+  background-image: linear-gradient(30deg, #fca5c0 10%, #ff9fb9 35%, #fdaaaa 100%);
+
+  .main-text {
+    text-align: left;
+  }
+  p {
+    max-width: 43ch;
+    @include breaks(large) {
+      max-width: 50ch;
     }
   }
 }
@@ -135,6 +148,7 @@
   font-size: var(--step-5);
   color: $dark;
   line-height: 0.9;
+  margin-bottom: 1.2rem;
 
   p {
     color: $white;
@@ -153,7 +167,7 @@
   color: $white;
   position: relative;
   font-size: var(--step-0);
-  margin: 2em 0;
+  margin-top: var(--space-m);
   z-index: 2;
   &:hover::before {
     background-color: $accent-03;
@@ -165,8 +179,8 @@
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
-    width: 4em;
-    height: 4em;
+    width: 3.8em;
+    height: 3.8em;
     border-radius: 50%;
     background-color: $accent-02;
     transition: background-color 0.4s ease;
@@ -179,50 +193,15 @@
     left: 2em;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 4em;
-    height: 4em;
+    width: 3.8em;
+    height: 3.8em;
     border-radius: 50%;
     border: 2px solid rgb(255, 199, 199);
-    animation: cta-anim 5s ease-in-out infinite;
+    animation: cta-anim 7s ease-in-out infinite;
     z-index: -2;
   }
 }
-@include breaks(medium) {
-  .main-text {
-    padding: 5em 2em 3em;
-    margin: 0 0 5rem 0;
-  }
-}
 
-@include breaks(large) {
-  .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 10rem 0 2rem 0;
-    & > * {
-      flex: 1;
-    }
-  }
-  .main-text {
-    margin: 0;
-    .text-bg {
-      padding: 0;
-      margin-top: 2.5rem;
-      text-align: left;
-      p {
-        max-width: 47ch;
-      }
-    }
-  }
-}
-@include breaks(x-large) {
-  .main-content {
-    padding: 10rem 0 0 0;
-    gap: 3rem;
-  }
-}
 @keyframes cta-anim {
   0% {
     transform: translate(-50%, -50%);

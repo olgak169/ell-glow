@@ -31,6 +31,14 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return (
+      savedPosition ||
+      new Promise(resolve => {
+        setTimeout(() => resolve({ top: 0, behavior: 'smooth' }), 400)
+      })
+    )
+  },
 })
 
 export default router

@@ -1,21 +1,21 @@
 <template>
   <div class="service-block">
     <div class="service-img" :class="{ light: service.background === 'light' }">
-      <img :src="`/img/services/${service.img}`" alt="" />
+      <img :src="`./img/services/${service.img}`" :alt="`Image ${service.name}`" />
     </div>
-    <article class="service-description service-main" v-if="serviceMain">
+    <article class="service-description service-main flow" v-if="serviceMain">
       <h2 class="service-name">{{ service.name }}</h2>
 
       <p>
         {{ service.description }}
       </p>
       <h3>Benefits</h3>
-      <ul>
+      <ul class="flow">
         <li v-for="(name, index) in service.benefits" :key="index">
           &#10023; {{ name }}
         </li>
       </ul>
-      <div class="service-details">
+      <div class="service-details flex-column">
         <div>
           <div class="flex">
             <span v-for="dur in service.duration">~{{ dur }}min</span>
@@ -24,10 +24,12 @@
             <span v-for="price in service.price">~{{ price }}$</span>
           </div>
         </div>
-        <RouterLink :to="`/services/${service.slug}`" class="btn-cta btn-info"
-          >More info</RouterLink
-        >
-        <router-link to="/contact" class="btn-cta btn-book">Book now</router-link>
+        <div class="service-links flex" v-if="service.slug">
+          <router-link :to="`/services/${service.slug}`" class="btn-cta btn-info"
+            >More info</router-link
+          >
+          <router-link to="/contact" class="btn-cta btn-book">Book now</router-link>
+        </div>
       </div>
     </article>
     <div class="service-description addon-container" v-else>
@@ -45,35 +47,8 @@
   </div>
 </template>
 <script setup>
-  import { RouterLink } from 'vue-router'
-  import ScrollTrigger from 'gsap/ScrollTrigger'
-  import gsap from 'gsap'
-  import { onMounted } from 'vue'
-
   const props = defineProps({
     service: Object,
     serviceMain: Boolean,
   })
-  // console.log(props.service)
-  // gsap.registerPlugin(ScrollTrigger)
-
-  // const scrollAnim = () => {
-  //   // const content = gsap.utils.toArray('.service-description')
-
-  //   gsap.from('.service-description', {
-  //     x: -20,
-  //     opacity: 0.1,
-  //     duration: 0.5,
-  //     scrollTrigger: {
-  //       start: '10% center',
-  //       end: 'center bottom',
-  //       markers: true,
-  //       toggleActions: 'restart play pause none',
-  //     },
-  //   })
-  // }
-  // onMounted(() => {
-  //   scrollAnim()
-  //   ScrollTrigger.refresh()
-  // })
 </script>

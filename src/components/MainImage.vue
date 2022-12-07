@@ -240,7 +240,4 @@
   onBeforeUnmount(() => {
     tl.revert()
   })
-  //
 </script>
-
-<style lang="scss"></style>

@@ -7,7 +7,7 @@
 <template>
   <HeaderComp />
   <RouterView v-slot="{ Component }">
-    <Transition name="page">
+    <Transition name="page" mode="out-in">
       <component :is="Component" :dataSet="dataSet" />
     </Transition>
   </RouterView>

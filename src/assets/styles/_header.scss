@@ -1,11 +1,5 @@
 @import 'variables';
-.nav-open {
-  &-enter-from,
-  &-leave-to {
-    opacity: 0;
-    transform: translateX(5rem);
-  }
-}
+
 header {
   position: absolute;
   top: 0;
@@ -56,11 +50,31 @@ nav {
   padding: 12rem 1rem 0 2rem;
   z-index: 5;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  @include breaks(medium) {
+    position: relative;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
+    padding: 0;
+    gap: 1.5rem;
+    height: unset;
+    min-height: unset;
+    flex: 1;
+  }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @include breaks(medium) {
+      flex-direction: row;
+      margin-right: 2em;
+    }
   }
   a {
     font-size: var(--step-0);
@@ -73,6 +87,28 @@ nav {
   &.router-link-active {
     color: $accent-03;
   }
+  @include breaks(medium) {
+    position: relative;
+    z-index: 2;
+    &:hover::before {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      background-color: $accent-05;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.4s ease-out;
+    }
+  }
 }
 .nav-btns {
   display: flex;
@@ -80,6 +116,10 @@ nav {
   text-align: center;
   gap: 1rem;
   background-color: none;
+
+  @include breaks(medium) {
+    flex-direction: row;
+  }
   .nav-btn-link {
     background-color: $white;
     color: $accent-01;
@@ -104,51 +144,12 @@ nav {
   }
 }
 
-@include breaks(medium) {
-  nav {
-    position: relative;
-    background: transparent;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    top: unset;
-    left: unset;
-    bottom: unset;
-    right: unset;
-    padding: 0;
-    gap: 1.5rem;
-    height: unset;
-    min-height: unset;
-    flex: 1;
 
-    ul {
-      flex-direction: row;
-      margin-right: 2em;
-    }
-  }
-  .nav-link {
-    position: relative;
-    z-index: 2;
-    &:hover::before {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      border-radius: 50%;
-      width: 2em;
-      height: 2em;
-      background-color: $accent-05;
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 0.3s ease, transform 0.4s ease-out;
-    }
-  }
-  .nav-btns {
-    flex-direction: row;
+.nav-open {
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+    transform: translateX(5rem);
   }
 }
+

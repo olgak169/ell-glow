@@ -1,16 +1,18 @@
 <template>
   <main>
     <div class="hero hero-services-details flow">
-      <h1>{{ data.name }}</h1>
+      <h1 class="display-title-light">{{ data.name }}</h1>
       <ul>
         <li v-for="(ind, item) in data.benefits" :key="ind">{{ (item, ind) }}</li>
       </ul>
       <router-link to="/contact" class="btn-cta">Book now</router-link>
     </div>
     <div class="container-service-details flex-column">
-      <img :src="`/img/services/${data.img}`" :alt="data.name" />
-      <h2 v-if="data.process.length">Process: {{ data.process[0] }}</h2>
-      <p>{{ data.description }}</p>
+      <img :src="`./img/services/${data.img}`" :alt="`${data.name} at EllGlow image `" />
+      <h2 class="details-process" v-if="data.process.length">
+        Process: {{ data.process[0] }}
+      </h2>
+      <p class="t-serif">{{ data.description }}</p>
       <div class="detail-more-info flow">
         <p v-for="item in data.moreInfo">{{ item }}</p>
       </div>
@@ -29,7 +31,7 @@
         </h3>
       </div>
 
-      <RouterLink to="/services" class="btn-back">Back to services</RouterLink>
+      <button @click="$router.back()" class="btn-back">&#8617; Back to services</button>
     </div>
   </main>
 </template>

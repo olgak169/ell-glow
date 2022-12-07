@@ -327,8 +327,10 @@
     {
       "slug": "european-facial",
       "name": "European facial",
-      "process": [],
-      "description": "Advanced Environ products used, triple cleanse, dead skin cells are sloughed off the top layer of the skin with a gentle orbital microdermabrasion, gently revealing, fresh, plump healthy skin. Extractions are performed followed by a deeply nourishing and hydrating hyaluronic acid mask infusion using the micro-current to ionize the molecules and push them further into the skin. Instant results.",
+      "process": [
+        "Advanced Environ products used, triple cleanse, dead skin cells are sloughed off the top layer of the skin with a gentle orbital microdermabrasion, gently revealing, fresh, plump healthy skin. Extractions are performed followed by a deeply nourishing and hydrating hyaluronic acid mask infusion using the micro-current to ionize the molecules and push them further into the skin. Instant results."
+      ],
+      "description": "Innovative treatment combining a range of advanced manual techniques with avant-garde products to rejuvenate your skin.",
       "benefits": [
         "improves circulation",
         "tones facial muscles",
@@ -371,7 +373,7 @@
       "process": [
         "Cleansing, enzyme exfoliation, toner, massage, mask, moisturizer SPF / night cream, eye cream, lip balm"
       ],
-      "description": "Advanced Environ products used.",
+      "description": "Cleanse, exfoliate and boost cell renewal in one go. Helps smooth the surface of the skin, prevent the appearance of new wrinkles and tighten the contours of the face.",
       "benefits": [
         "improves circulation",
         "tones facial muscles",
@@ -482,13 +484,81 @@
     }
   ],
   "other": [
-    "Hair removal | IPL laser",
-    "Skin Tag | Pigmentation removal",
-    "Body treatments",
-    "Hair services"
+    {
+      "slug": null,
+      "name": "Hair services",
+      "process": [],
+      "description": "There is nothing more frustrating than not looking your best. Whether you are feeling low in confidence due to damaged hair, or you are simply short of time to manage your mane, Ell Glow is here to help with hair styling services for men and women.",
+      "benefits": [
+        "total hair bliss",
+        "restore hair shine",
+        "promote hair growth",
+        "no more weak and brittle hair"
+      ],
+      "moreInfo": [],
+      "price": [],
+      "duration": [],
+      "packageInfo": [],
+      "img": "service-img-hairtreatment.jpg",
+      "background": null
+    },
+    {
+      "slug": null,
+      "name": "Hair removal | IPL laser",
+      "process": [],
+      "description": "This treatment is one of the most effective ways to remove unwanted body of facial hair, quick and virtually painless . If you're tired of waxing and shaving but aren't quite sure if you're ready for laser treatment, this is for you.",
+      "benefits": [
+        "smooth skin",
+        "safe for all skin types",
+        "enjoy year round",
+        "long-lasting results"
+      ],
+      "moreInfo": [],
+      "price": [],
+      "duration": [],
+      "packageInfo": [],
+      "img": "service-img-01.jpg",
+      "background": "light"
+    },
+    {
+      "slug": null,
+      "name": "Body treatments",
+      "process": [],
+      "description": "Sculpt your body, lose unwanted fat, tighten the skin -  we have a solution that targets your area of concern. Our body treatments are the next easy step toward getting the kind of body you've always wanted.",
+      "benefits": [
+        "improve blood circulation",
+        "promote overall health and wellness",
+        "help relieve pain and tension",
+        "lose weight"
+      ],
+      "moreInfo": [],
+      "price": [],
+      "duration": [],
+      "packageInfo": [],
+      "img": "service-img-body.jpg",
+      "background": null
+    },
+    {
+      "slug": null,
+      "name": "Skin Tag | Pigmentation removal",
+      "process": [],
+      "description": "Our highly effective treatments provide immediate and overtime results to lighten and improve most causes of hyperpigmentation.",
+      "benefits": [
+        "increase skin radiance",
+        "reduce freckles and dark spots",
+        "no more acne scars",
+        "smooth beautiful skin"
+      ],
+      "moreInfo": [],
+      "price": [],
+      "duration": [],
+      "packageInfo": [],
+      "img": "service-img-01.jpg",
+      "background": "dark"
+    }
   ],
   "mainText": [
-    "Your time at Ell Glow is an experience like no other! You will be served by certified well trained specialists and could enjoy every treatment with your friends. We provide an excellent level of service with top quality products and treatments.",
+    "Your time at Ell Glow is an experience like no other! You will be served by certified well trained specialists providing you an excellent level of service with top quality products and treatments.",
     "At Ell Glow, we specialize in social facials for men and women alike. Our aim is to create a special personalized programs to care for the beauty and health of your skin and hair.",
     "We source latest innovations, products and devices for your beauty and aesthetic needs. For the beauty you deserve , you need look no further than Ell Glow.",
     "You're guaranteed to leave looking your best possible self!"
@@ -524,7 +594,7 @@
     },
     {
       "id": 7,
-      "text": "I've been going to the Ell Glow beauty and hair salon for over a year now and I love it! The first time i came in I had dark circles under my eyes and my skin looked dull. The staff at the salon recommended a series of treatments, so I got them done, and over time my skin looked brighter, younger, and firmer. The staff members are friendly, they remember me every time I come in. When I'm at the salon, the atmosphere is relaxing and peaceful."
+      "text": "I've been going to the Ell Glow beauty and hair salon for a few month now and I love it! The first time i came in I had dark circles under my eyes and my skin looked dull. The staff at the salon recommended a series of treatments, so I got them done, and over time my skin looked brighter, younger, and firmer. The staff members are friendly, they remember me every time I come in. I absolutely enjoy every visit!"
     }
   ],
   "locationGallery": [

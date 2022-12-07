@@ -10,7 +10,7 @@
 }
 .btn-cta {
   color: var(--btn-clr, $white);
-  font-size: var(--btn-fs, --step-1);
+  font-size: var(--btn-fs, var(--step-1));
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -31,6 +31,26 @@
 
     transition: background-color 0.5s ease;
   }
+  &:hover::before {
+    background-color: $accent-03;
+  }
+}
+.btn-up {
+  position: fixed;
+  bottom: 3em;
+  right: 4rem;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-color: $accent-02;
+  color: $white;
+  z-index: 4;
+}
+.display-title-light {
+  text-transform: uppercase;
+  font-size: var(--step-5);
+  color: $white;
+  text-shadow: 1px 1px 2px #b5717c;
 }
 .hero {
   background-size: cover;
@@ -42,7 +62,7 @@
   text-align: center;
   padding: 13rem 0 3rem 0;
   h1 {
-    font-size: var(--fs-xl);
+    font-size: var(--step-5);
     color: $accent-01;
     line-height: 1;
   }
