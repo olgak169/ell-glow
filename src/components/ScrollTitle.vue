@@ -54,7 +54,7 @@
     })
   })
   onBeforeUnmount(() => {
-    tl.kill()
+    tl.revert()
     window.removeEventListener('resize', resize)
   })
   //

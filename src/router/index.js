@@ -23,7 +23,6 @@ const router = createRouter({
       path: '/services/:slug',
       name: 'serviceDetails',
       component: () => import('../views/DetailsView.vue'),
-      props: true,
     },
     {
       path: '/contact',

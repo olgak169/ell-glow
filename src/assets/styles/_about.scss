@@ -1,10 +1,11 @@
 @import 'variables';
 .hero-about {
-  min-height: 40vh;
+  // min-height: 40vh;
   overflow: hidden;
   position: relative;
+  padding: 0;
   @include breaks(large) {
-    min-height: 50vh;
+    max-height: 50vh;
   }
   .hero-overlay {
     position: absolute;
@@ -20,14 +21,10 @@
     );
   }
   video {
+    width: 100%;
     max-width: 75rem;
     object-fit: cover;
-    position: absolute;
 
-    left: 50%;
-    bottom: 0;
-    right: 0;
-    transform: translateX(-50%);
     z-index: 0;
     &::-webkit-media-controls {
       display: none !important;

@@ -108,7 +108,7 @@
   }
   onMounted(() => {
     window.addEventListener('scroll', showBtn)
-    scrollAnim()
+    // scrollAnim()
   })
   onBeforeUnmount(() => {
     // anim.value.kill()

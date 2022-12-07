@@ -8,7 +8,7 @@
       <router-link to="/contact" class="btn-cta">Book now</router-link>
     </div>
     <div class="container-service-details flex-column">
-      <img :src="`./img/services/${data.img}`" :alt="`${data.name} at EllGlow image `" />
+      <img :src="`../img/services/${data.img}`" :alt="`${data.name} at EllGlow image `" />
       <h2 class="details-process" v-if="data.process.length">
         Process: {{ data.process[0] }}
       </h2>
@@ -31,7 +31,7 @@
         </h3>
       </div>
 
-      <button @click="$router.back()" class="btn-back">&#8617; Back to services</button>
+      <button @click="$router.back()" class="btn-back">Back to services</button>
     </div>
   </main>
 </template>
