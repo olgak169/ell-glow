@@ -129,13 +129,15 @@ footer {
 }
 .gallery-items {
   width: 100%;
+  max-width: 21rem;
   min-height: 20rem;
   aspect-ratio: 16 / 9;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   @include breaks(medium) {
     width: 80%;
-    margin: 0 auto;
+    max-width: 40rem;
   }
   @include breaks(large) {
     min-height: 30rem;

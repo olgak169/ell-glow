@@ -65,7 +65,6 @@
 <script setup>
   import { onBeforeUnmount, onMounted, ref } from 'vue'
   import ScrollTitle from '../components/ScrollTitle.vue'
-  // import dataSet from '../assets/data.json'
   import ServiceBlock from '../components/ServiceBlock.vue'
   import ScrollTrigger from 'gsap/ScrollTrigger'
   import gsap from 'gsap'
@@ -74,8 +73,6 @@
     dataSet: Object,
   })
   const btnTopShow = ref(false)
-  // const anim = ref(null)
-  // const content = ref(null)
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -97,21 +94,26 @@
   }
 
   const toTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    })
+    if (btnTopShow.value === true) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      })
+    }
   }
   const showBtn = () => {
     btnTopShow.value = window.scrollY > 900
   }
   onMounted(() => {
-    window.addEventListener('scroll', showBtn)
-    // scrollAnim()
+    window.addEventListener('scroll', () => {
+      showBtn()
+    })
+    scrollAnim()
   })
   onBeforeUnmount(() => {
-    // anim.value.kill()
-    window.removeEventListener('scroll', showBtn)
+    window.removeEventListener('scroll', () => {
+      showBtn()
+    })
   })
 </script>
