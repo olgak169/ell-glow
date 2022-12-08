@@ -59,7 +59,7 @@
       />
     </section>
     <footer class="t-cursive">Come visit us soon!</footer>
-    <button class="btn-up" @click.stop="toTop" v-if="btnTopShow">to top</button>
+    <button class="btn-up" @click.stop="toTop" v-if="scrollY > 2000">to top</button>
   </main>
 </template>
 <script setup>
@@ -72,7 +72,9 @@
   const props = defineProps({
     dataSet: Object,
   })
-  const btnTopShow = ref(false)
+
+  const scrollTimer = ref(0)
+  const scrollY = ref(0)
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -85,7 +87,7 @@
         duration: 1,
         scrollTrigger: {
           trigger: item,
-          start: '20% center',
+          start: '5% center',
           end: '+=400',
         },
         immediateRender: false,
@@ -94,26 +96,26 @@
   }
 
   const toTop = () => {
-    if (btnTopShow.value === true) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      })
-    }
-  }
-  const showBtn = () => {
-    btnTopShow.value = window.scrollY > 900
-  }
-  onMounted(() => {
-    window.addEventListener('scroll', () => {
-      showBtn()
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     })
+  }
+  const handleScroll = () => {
+    if (scrollTimer.value) return
+    scrollTimer.value = setTimeout(() => {
+      scrollY.value = window.scrollY
+      clearTimeout(scrollTimer.value)
+      scrollTimer.value = 0
+    }, 100)
+  }
+
+  onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
     scrollAnim()
   })
   onBeforeUnmount(() => {
-    window.removeEventListener('scroll', () => {
-      showBtn()
-    })
+    ScrollTrigger.killAll()
+    window.removeEventListener('scroll', handleScroll)
   })
 </script>

@@ -71,34 +71,6 @@ $bp-xl: 65rem;
   --space-s-l: clamp(1.13rem, calc(0.39rem + 3.12vw), 2.5rem);
   --space-m-3xs: clamp(0.31rem, calc(2.42rem + -3.12vw), 1.69rem);
 
-  --fs-xxl-fluid: calc(40px + (65 - 40) * ((100vw - 375px) / (1600 - 375)));
-  --fs-xl: 4rem;
-  --fs-lg: 2.2rem;
-  --fs-600: 2rem;
-  --fs-500: 1.125rem;
-  --fs-400: 1rem;
   --shadow-lg: 0 50px 100px -20px rgba(92, 8, 70, 0.25),
     0 30px 60px -30px rgba(82, 15, 71, 0.3);
-
-  @include breaks(medium) {
-    --fs-xl: 4rem;
-    --fs-lg: 2.6rem;
-    --fs-600: 2.2rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1rem;
-  }
-  @include breaks(large) {
-    --fs-xl: 4.3rem;
-    --fs-lg: 2.8rem;
-    --fs-600: 2.2rem;
-    --fs-500: 1.5rem;
-    --fs-400: 1.1rem;
-  }
-  @include breaks(x-large) {
-    --fs-xl: 4.5rem;
-    --fs-lg: 2.8rem;
-    --fs-600: 2.2rem;
-    --fs-500: 1.5rem;
-    --fs-400: 1.125rem;
-  }
 }

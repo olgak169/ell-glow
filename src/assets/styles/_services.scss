@@ -3,6 +3,13 @@
 //  -------------------------------------- //
 //  ----------- Service details ---------- //
 //  -------------------------------------- //
+.absolute {
+  position: fixed;
+  right: 5em;
+  top: 4em;
+  z-index: 50;
+  font-size: 4rem;
+}
 .hero-services-details {
   background-image: linear-gradient(
       110.9deg,
@@ -112,6 +119,7 @@
 .service-block {
   font-family: 'Lora', serif;
   color: $black;
+  max-width: 600px;
   &:nth-of-type(even) .service-img {
     background-color: $accent-01;
     color: $white;
@@ -143,6 +151,7 @@
 }
 @include breaks(large) {
   .service-block {
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;

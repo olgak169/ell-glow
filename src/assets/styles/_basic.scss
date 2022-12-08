@@ -52,6 +52,15 @@ textarea {
   font-family: inherit;
 }
 
+footer {
+  background: $accent-04;
+  color: $black;
+  margin-top: var(--space-m);
+  padding: var(--space-s) 0;
+  font-size: var(--step-4);
+  text-align: center;
+}
+
 .t-cursive {
   font-family: 'WindSong', cursive;
 }
@@ -73,25 +82,6 @@ textarea {
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
-// .container {
-//   max-width: 95%;
-//   margin: 0 auto;
-// }
-// @include breaks(medium) {
-//   .container {
-//     max-width: 90%;
-//   }
-// }
-// @include breaks(large) {
-//   .container {
-//     width: 90%;
-//     max-width: 67.5rem;
-//   }
-// }
-// .flex {
-//   display: flex;
-//   gap: var(--gap, 1rem);
-// }
 
 .container {
   position: relative;
@@ -99,11 +89,8 @@ textarea {
   margin: 0 auto;
   padding: 0 var(--space-s);
   height: 100%;
-  // @include breaks(large) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
+  overflow-x: hidden;
+  // overflow-anchor: none;
 }
 .grid {
   display: grid;
