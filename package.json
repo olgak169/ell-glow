@@ -8,7 +8,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "gsap": "^3.11.1",
+    "gsap": "^3.11.3",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },
